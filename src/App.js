@@ -3,6 +3,7 @@ import Cover from "./components/Cover/Cover";
 import About from './components/Cover/About';
 import Logi from './components/Cover/Logi';
 import { Routes, Route } from 'react-router-dom'
+
 function App() {
   return (
     <div>
