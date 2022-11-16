@@ -1,0 +1,22 @@
+.Nava {
+  width: 1270px;
+  height: 50px;
+  background-image: radial-gradient(
+    circle at 91.72% 57.36%,
+    #4b594f 0,
+    #43554b 12.5%,
+    #374e44 25%,
+    #24433a 37.5%,
+    #06352d 50%,
+    #002722 62.5%,
+    #001f1b 75%,
+    #001a18 87.5%,
+    #001618 100%
+  );
+}
+.Nava > p {
+  color: aliceblue;
+  font-size: 159px;
+  padding-bottom: 20px !important;
+  padding-top: 20px !important;
+}
