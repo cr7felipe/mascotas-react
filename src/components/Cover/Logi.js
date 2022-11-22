@@ -1,32 +1,27 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Logi.css"
-const Logi = () => {
-    const [popupStyle, showpopup] = useState("hide")
+import Form from 'react-bootstrap/Form';
 
-    const popup = () => {
-        showpopup("loging-popup")
-        setTimeout(() => showpopup("hide"), 3000)
-
-    }
+function Logi() {
     return (
-        <div className="Login">
-            <h1>Login</h1>
-            <input className="b1" type={'text'} placeholder="username" />
-            <input type={'password'} placeholder="password" />
+        <Form>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type="email" placeholder="name@example.com" />
+            </Form.Group>
+            <Form.Control type="password" placeholder="Password" />
 
-            <div className="lgbt" onClick={popup}> Login</div>
-            <p className="text"> Or login using</p>
-            <div className="alt">
-                <div className="face"></div>
-                <div className="google"></div>
-            </div>
-            <div className={popupStyle}>
-                <h3> login failed</h3>
-                <p>username or password incorrect</p>
-            </div>
 
-        </div>
-    )
+            <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                <Form.Label>Ingrese informacion relevante sobre la perdida de su mascota que ayude a recuperarla</Form.Label>
+                <Form.Control as="textarea" rows={6} />
+            </Form.Group>
+            <Form.Group controlId="formFileMultiple" className="mb-3">
+                <Form.Label>Eliga una foto de la mascota</Form.Label>
+                <Form.Control type="file" multiple />
+            </Form.Group>
+        </Form>
 
+    );
 }
-export default Logi
+export default Logi;
